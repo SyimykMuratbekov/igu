@@ -7,7 +7,7 @@ const start = async () => {
 	const app = await NestFactory.create(AppModule)
 	app.setGlobalPrefix('api/v2')
 	app.enableCors({
-		origin: ['https://dashboard.libraryiksu.kg', 'https://libraryiksu.kg'],
+		origin: ['https://dashboard.libraryiksu.kg', 'https://libraryiksu.kg', 'http://localhost:3000'],
 		methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
 		allowedHeaders: 'Content-Type, Accept, Authorization'
 	})
