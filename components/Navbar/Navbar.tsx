@@ -107,9 +107,24 @@ export const Navbar: FC = (): JSX.Element => {
             </a>
           </li>
           <li className={classes.menuItem}>
-            <Link href={'/internet-links'}>
-              <a>Электронные Ресурсы</a>
-            </Link>
+            <a>
+            Электронные Ресурсы
+              <span>
+                <MdArrowDropDown />
+              </span>
+            </a>
+            <ul className={classes.submenu}>
+              <li className={classes.subitem}>
+                <Link href={`/internet-links`}>
+                  <a>Ссылка интернет</a>
+                </Link>
+              </li>
+              <li className={classes.subitem}>
+                <Link href={`#`}>
+                  <a>Базы данных</a>
+                </Link>
+              </li>
+            </ul>
           </li>
 
           <li className={classes.menuItem}>
